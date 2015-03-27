@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="someApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Some App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular-route.min.js"></script>
+	<script src="js/control.js"></script>
+	<base href="/">
+</head>
+<body ng-controller="someAppCtrl">
+	
+	<header>
+		<ul>
+			<li><a href="log-in">Log In</a></li>
+			<li><a ng-click="$logOut()">Log Out</a></li>
+			<li><a href="new-account">New Account</a></li>
+			<li><a href="password-forgot">Forgot Password</a></li>
+			<li><a href="password-code">Submit Password Reset Code</a></li>
+			<li><a href="password-reset">Reset Password</a></li>
+			<li><a href="profile">Profile</a></li>
+		</ul>
+	</header>
+
+	<div id="wrapper">
+
+		<h3>{{message}}</h3>
+		
+		<ng-view></ng-view>
+
+	</div>
+
+</body>
+</html>

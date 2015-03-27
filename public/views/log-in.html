@@ -1,0 +1,21 @@
+		<div id="log-in">
+			<h3>Log In</h3>
+			<div class="row">
+				<label for="email" class="col-xs-6">Email Address</label>
+				<input type="text" class="col-xs-6" ng-model="login.email">
+			</div>
+			<div class="row">
+				<label for="password" class="col-xs-6">Password</label>
+				<input type="password" class="col-xs-6" ng-model="login.password">
+			</div>
+			<div class="row checkbox">
+			    <span class="col-xs-6"></span>
+			    <label class="col-xs-6">
+			      <input type="checkbox" ng-model="login.remember"> Remember
+			    </label>
+			</div>
+			<div class="row">
+				<label class="col-xs-6"></label>
+				<button type="button" class="btn btn-primary" ng-click="logIn(login)" >Log In</button>
+			</div>
+		</div>
